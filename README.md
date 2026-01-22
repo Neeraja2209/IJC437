@@ -36,7 +36,8 @@ NOTE- THE ABOVE INSTRUCTION ARE PROVIDED TO RUN AN OPTIONAL CODE FILE USED TO PR
 RUNNING THIS CODE CAN BE SKIPPED.
 
 # Steps to run the main code
-This git repository contains a file named IJC437 R Code.R and another file named Music Dataset.csv.
+This git repository contains file named IJC437 R Code.R and  Music Dataset.csv.
+
 1. Download IJC437 R Code.R and Music Dataset.csv
 
 <img width="1262" height="567" alt="image" src="https://github.com/user-attachments/assets/d6a745e2-c83b-463d-870e-3c467f2387ee" />
