@@ -3,8 +3,8 @@ This repository contains the necessary files related to IJC437 coursework.
 
 This project explores how different audio features influences song popularity offering valuable insights to the music industry.
 
-This project uses the MusicOset dataset. 
-It includes data files such as Artists, Songs, Song Chart, Releases, Tracks, Acoustic Features etc.
+This project uses the MusicOset dataset. This dataset contains a wide range of data with respect to songs, albums, artists, lyrics, metadata and more
+Data files such as Artists, Songs, Song Chart, Releases, Tracks, and Acoustic Features are used in this project to evaluate song popularity based on audio features.
 
 # Steps to run code for data pre-processing (Optional)
 This GitHub repository contains a Folder named Data Cleaning.
