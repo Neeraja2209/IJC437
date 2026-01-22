@@ -18,6 +18,11 @@ artist<- read_delim("artists.csv", delim = "\t", col_names = FALSE)
 # Assigning column names 
 colnames(artist) <- c("Artist_ID", "Artist", "Followers", "Popularity", "Role", "Genre", "Genre_List")
 
+# Renaming by index
+colnames(artist)[8] <- "Image_url"
+
+# Removing the first row as those are column headers
+artist <- artist[-1, ]
 
 # Cleaning text fields
 artist <- artist %>%
@@ -27,12 +32,6 @@ artist <- artist %>%
     Genre  = str_to_lower(str_trim(Genre)),
     Genre_List = str_replace_all(Genre_List, "\\[|\\]|'|\"", "") %>% str_trim()
   )
-
-# Renaming by index
-colnames(artist)[8] <- "Image_url"
-
-# Removing the first row as those are column headers
-artist <- artist[-1, ]
 
 # Assigning datatype to numeric fields
 artist <- artist %>%

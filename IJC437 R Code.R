@@ -79,7 +79,6 @@ dataset_cleaned %>%
 
 ggpairs(dataset_cleaned[feature_audio])
 
-#ggcorr(dataset_cleaned[feature_audio], label = TRUE)
 
 cor_matrix <- cor(dataset_cleaned %>% select(all_of(feature_popularity), all_of(feature_audio)),
                   use = "complete.obs")
@@ -239,7 +238,7 @@ rf_preds <- predict(rf_model, normalised_test_data)
 rf_rmse <- rmse(normalised_test_data$songs.popularity, rf_preds)
 cat("Random Forest RMSE:", rf_rmse, "\n")
 
-rf_r2 <- calc_r2(normalised_test_data$songs.popularity, rf_preds)
+rf_r2 <- calculate_r2(normalised_test_data$songs.popularity, rf_preds)
 cat("Random Forest R-squared:", rf_r2, "\n")
 
 # Feature importance plot
@@ -297,7 +296,7 @@ xgb_preds <- predict(xgb_model, test_matrix)
 xgb_rmse <- rmse(normalised_test_data$songs.popularity, xgb_preds)
 cat("XGBoost RMSE:", xgb_rmse, "\n")
 
-xgb_r2 <- calc_r2(normalised_test_data$songs.popularity, xgb_preds)
+xgb_r2 <- calculate_r2(normalised_test_data$songs.popularity, xgb_preds)
 cat("XGBoost R-squared:", xgb_r2, "\n")
 
 # XGBoost feature importance
@@ -341,7 +340,6 @@ ggplot(results_long, aes(x = Actual, y = Predicted, color = Model)) +
     y = "Predicted Popularity"
   ) +
   theme_bw()
-
 
 
 # Additional code used to create a faceted scatterplot for audio features vs song popularity used in the report
