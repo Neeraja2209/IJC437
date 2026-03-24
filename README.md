@@ -1,10 +1,19 @@
 # IJC437 - Predicting Song Popularity using Audio Features from Spotify Data
 This repository contains the necessary files related to IJC437 coursework.
 
-This project explores how different audio features influences song popularity offering valuable insights to the music industry.
+# Overview of the Project
+This project investigates whether Spotify audio features can reliably predict song popularity, focusing on tracks released between 2008 and 2018, a decade marked
+by the rise of streaming culture. Using the MusicOSet dataset, the study performs extensive data cleaning, exploratory data analysis, and machine learning
+modelling to examine relationships between musical characteristics and popularity scores. Three models, Linear Regression, Random Forest, and XGBoost were trained
+on standardised audio features including loudness, energy, danceability, valence, and instrumentalness.
+The analysis shows that popularity is moderately predictable from audio features alone, with model performance achieving R² values between 0.23 and 0.28.
+Consistently across models, loudness, energy, danceability, and valence emerged as the strongest predictors, while instrumentalness showed a negative association
+with popularity. Among the tested models, Random Forest achieved the best performance, demonstrating the ability to capture nonlinear patterns and feature
+interactions more effectively than linear or boosting approaches.
+Overall, the project concludes that while audio features provide meaningful insights into popularity trends, they are insufficient for highly accurate prediction
+on their own due to external influences such as marketing, artist reputation, and cultural context. The study highlights opportunities for future work using
+multimodal data including lyrics, metadata, and temporal trends to improve predictive accuracy.
 
-This project uses the MusicOset dataset. This dataset contains a wide range of data with respect to songs, albums, artists, lyrics, metadata and more
-Data files such as Artists, Songs, Song Chart, Releases, Tracks, and Acoustic Features are used in this project to evaluate song popularity based on audio features.
 
 # Steps to run code for data pre-processing (Optional)
 This GitHub repository contains a Folder named Data Cleaning.
