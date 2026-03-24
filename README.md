@@ -6,10 +6,12 @@ This project investigates whether Spotify audio features can reliably predict so
 by the rise of streaming culture. Using the MusicOSet dataset, the study performs extensive data cleaning, exploratory data analysis, and machine learning
 modelling to examine relationships between musical characteristics and popularity scores. Three models, Linear Regression, Random Forest, and XGBoost were trained
 on standardised audio features including loudness, energy, danceability, valence, and instrumentalness.
+
 The analysis shows that popularity is moderately predictable from audio features alone, with model performance achieving R² values between 0.23 and 0.28.
 Consistently across models, loudness, energy, danceability, and valence emerged as the strongest predictors, while instrumentalness showed a negative association
 with popularity. Among the tested models, Random Forest achieved the best performance, demonstrating the ability to capture nonlinear patterns and feature
 interactions more effectively than linear or boosting approaches.
+
 Overall, the project concludes that while audio features provide meaningful insights into popularity trends, they are insufficient for highly accurate prediction
 on their own due to external influences such as marketing, artist reputation, and cultural context. The study highlights opportunities for future work using
 multimodal data including lyrics, metadata, and temporal trends to improve predictive accuracy.
